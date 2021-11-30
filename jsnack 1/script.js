@@ -20,21 +20,18 @@ const cognomi = [
     'Ghilardi'
 ];
 
-let nomiRundomFromFunction = randomNomiInvitati();
-console.log(nomiRundomFromFunction);
+const random = [];
 
-let cognomiRundomFromFunction = randomCognomiInvitati();
-console.log(cognomiRundomFromFunction);
-
-function randomNomiInvitati() {
-    let randomNomi = nomi[Math.floor(Math.random() * nomi.length)];
-    return randomNomi;
+for (let i = 0; i < 5; i++){
+    let nomiRandom = nomi[Math.floor(Math.random() * nomi.length)] + ' ' + cognomi[Math.floor(Math.random() * cognomi.length)];
+    random.push(nomiRandom);
 }
 
-function randomCognomiInvitati() {
-    let randomCognomi = cognomi[Math.floor(Math.random() * cognomi.length)];
-    return randomCognomi;
-}
+console.log(random);
+
+
+
+
 
 
 
