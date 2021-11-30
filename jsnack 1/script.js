@@ -9,7 +9,8 @@ const nomi = [
     'Alessia',
     'Luca',
     'Valeria',
-    'Daniele'
+    'Daniele',
+    'Mauro'
 ];
 
 const cognomi = [
@@ -17,12 +18,13 @@ const cognomi = [
     'Moroni',
     'Cattaneo',
     'Zanchi',
-    'Ghilardi'
+    'Ghilardi',
+    'Brembilla'
 ];
 
 const random = [];
 
-for (let i = 0; i < 5; i++){
+for (let i = 0; i < nomi.length; i++){
     let nomiRandom = nomi[Math.floor(Math.random() * nomi.length)] + ' ' + cognomi[Math.floor(Math.random() * cognomi.length)];
     random.push(nomiRandom);
 }
